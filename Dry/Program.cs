@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 
 namespace Dry
@@ -32,9 +33,15 @@ namespace Dry
             //DummyFuncMore();
             //Console.WriteLine("Finish DummyFuncMore");
 
-            MakeAction(DummyFunc);
-            MakeAction(DummyFuncAgain);
-            MakeAction(DummyFuncMore);
+            //MakeAction(DummyFunc);
+            //MakeAction(DummyFuncAgain);
+            //MakeAction(DummyFuncMore);
+
+            List<Action> actions = GetActionSteps();
+            foreach (var action in actions)
+            {
+                MakeAction(action);
+            }
 
             Console.ReadLine();
         }
@@ -66,6 +73,16 @@ namespace Dry
             //string format = Constants.Format;
             //Console.WriteLine(Format, "Николай", "сын", Address, 4);
             WriteToConsole("Николай", "сын", 4);
+        }
+
+        private static List<Action> GetActionSteps()
+        {
+            return new List<Action>()
+            {
+                DummyFunc,
+                DummyFuncAgain,
+                DummyFuncMore
+            };
         }
     }
 }
