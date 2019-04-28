@@ -7,19 +7,34 @@ namespace Dry
     {
         public static readonly string Address = Constants.Address;
         public static readonly string Format = Constants.Format;
+
+        private static void MakeAction(Action action)
+        {
+            var nameMethod = action.Method.Name;
+            Console.WriteLine($"Start  {nameMethod}");
+            action();
+            Console.WriteLine($"Finish {nameMethod}");
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Start DummyFunc");
-            DummyFunc();
-            Console.WriteLine("Finish DummyFunc");
 
-            Console.WriteLine("Start DummyFuncAgain");
-            DummyFuncAgain();
-            Console.WriteLine("Finish DummyFuncAgain");
 
-            Console.WriteLine("Start DummyFuncMore");
-            DummyFuncMore();
-            Console.WriteLine("Finish DummyFuncMore");
+            //Console.WriteLine("Start DummyFunc");
+            //DummyFunc();
+            //Console.WriteLine("Finish DummyFunc");
+
+            //Console.WriteLine("Start DummyFuncAgain");
+            //DummyFuncAgain();
+            //Console.WriteLine("Finish DummyFuncAgain");
+
+            //Console.WriteLine("Start DummyFuncMore");
+            //DummyFuncMore();
+            //Console.WriteLine("Finish DummyFuncMore");
+
+            MakeAction(DummyFunc);
+            MakeAction(DummyFuncAgain);
+            MakeAction(DummyFuncMore);
 
             Console.ReadLine();
         }
