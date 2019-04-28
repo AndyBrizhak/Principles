@@ -9,9 +9,18 @@ namespace Dry
         public static readonly string Format = Constants.Format;
         static void Main(string[] args)
         {
+            Console.WriteLine("Start DummyFunc");
             DummyFunc();
+            Console.WriteLine("Finish DummyFunc");
+
+            Console.WriteLine("Start DummyFuncAgain");
             DummyFuncAgain();
+            Console.WriteLine("Finish DummyFuncAgain");
+
+            Console.WriteLine("Start DummyFuncMore");
             DummyFuncMore();
+            Console.WriteLine("Finish DummyFuncMore");
+
             Console.ReadLine();
         }
 
@@ -22,6 +31,7 @@ namespace Dry
 
         private static void DummyFunc()
         {
+            
             //string address = Constants.Address;
             //string format = Constants.Format;
             //Console.WriteLine(Format, "Петя", "школьный друг", Address, 30);
