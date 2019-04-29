@@ -19,8 +19,6 @@ namespace Dry
 
         static void Main(string[] args)
         {
-
-
             //Console.WriteLine("Start DummyFunc");
             //DummyFunc();
             //Console.WriteLine("Finish DummyFunc");
@@ -46,6 +44,12 @@ namespace Dry
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Форматированный вывод данных в консоль
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="description"></param>
+        /// <param name="age"></param>
         private static void WriteToConsole(string name, string description, int age)
         {
             Console.WriteLine(Format, name, description, Address, age);
@@ -75,6 +79,11 @@ namespace Dry
             WriteToConsole("Николай", "сын", 4);
         }
 
+
+        /// <summary>
+        /// Список вызываемых методов
+        /// </summary>
+        /// <returns></returns>
         private static List<Action> GetActionSteps()
         {
             return new List<Action>()
