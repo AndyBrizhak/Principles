@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MagicNumbers
 {
+    /// <summary>
+    /// Constants
+    /// </summary>
     class Constants
     {
         public static readonly int IndexOfDisplayedAnimal = 1;
