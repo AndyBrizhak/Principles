@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dry", "Dry\Dry.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicNumbers", "MagicNumbers\MagicNumbers.csproj", "{D91A4FF3-2E5A-4A52-9AD8-EE6D8FC4913C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatLogic", "RepeatLogic\RepeatLogic.csproj", "{D624CE12-3BEA-40F0-B898-C91E23BF5805}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D91A4FF3-2E5A-4A52-9AD8-EE6D8FC4913C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D91A4FF3-2E5A-4A52-9AD8-EE6D8FC4913C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D91A4FF3-2E5A-4A52-9AD8-EE6D8FC4913C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D624CE12-3BEA-40F0-B898-C91E23BF5805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D624CE12-3BEA-40F0-B898-C91E23BF5805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D624CE12-3BEA-40F0-B898-C91E23BF5805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D624CE12-3BEA-40F0-B898-C91E23BF5805}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
