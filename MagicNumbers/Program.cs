@@ -9,6 +9,19 @@ namespace MagicNumbers
     class Program
     {
         /// <summary>
+        /// Prorerties show Animal on Screen
+        /// </summary>
+        private static int IndexOfDisplayedAnimal =
+            Constants.IndexOfDisplayedAnimal;
+
+        static void Main(string[] args)
+        {
+            DoMagicNumber();
+            Console.ReadKey();
+
+        }
+
+        /// <summary>
         /// Give Collection Animals
         /// </summary>
         /// <returns></returns>
@@ -34,22 +47,16 @@ namespace MagicNumbers
             };
         }
 
-        static void Main(string[] args)
-        {
-            DoMagicNumber();
-            Console.ReadKey();
-
-        }
-
         private static void DoMagicNumber()
         {
             List<Animal> animals = GetAnimals().ToList();
             if (animals.Count > 0)
             {
+                Animal displayedAnimal = animals[IndexOfDisplayedAnimal];
                 Console.WriteLine($"Название: {0}, тип: {1} ,  число ног: {2}",
-                                    animals[1].AnimalName,
-                                    animals[1].AnimalType,
-                                    animals[1].LegsCount);
+                    displayedAnimal.AnimalName,
+                    displayedAnimal.AnimalType,
+                    displayedAnimal.LegsCount);
                 
             }
         }
