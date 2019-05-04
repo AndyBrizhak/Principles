@@ -3,9 +3,9 @@
 
 namespace RepeatLogic
 {
-    class Customer
+    class Customer : EntityBase
     {
-        public long Id { get; set; }
+        //public long Id { get; set; }
         public string Description { get; set; }
 
         #region Customer()
@@ -13,7 +13,7 @@ namespace RepeatLogic
         public Customer()
         {
             //Id = CalculateId();
-            Id = IdHelper.CalculateId();
+            //Id = IdHelper.CalculateId();
         }
 
         #endregion

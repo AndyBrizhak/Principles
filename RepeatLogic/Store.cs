@@ -1,26 +1,26 @@
 ﻿using System;
 
-public class Store
+public class Store : EntityBase
 {
-    public long Id { get; set; }
+    //public long Id { get; set; }
 
     #region Store()
 
     public Store()
     {
         //Id = CalculateId();
-        Id = IdHelper.CalculateId();
+        //Id = IdHelper.CalculateId();
     }
 
     #endregion
 
     #region CalculateId()
 
-    private long CalculateId()
-    {
-        long id = DateTime.Now.Ticks;
-        return id;
-    }
+    //private long CalculateId()
+    //{
+    //    long id = DateTime.Now.Ticks;
+    //    return id;
+    //}
 
     #endregion
 }
