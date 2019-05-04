@@ -8,7 +8,8 @@ public class Store
 
     public Store()
     {
-        Id = CalculateId();
+        //Id = CalculateId();
+        Id = IdHelper.CalculateId();
     }
 
     #endregion

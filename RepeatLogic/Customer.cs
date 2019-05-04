@@ -12,7 +12,8 @@ namespace RepeatLogic
 
         public Customer()
         {
-            Id = CalculateId();
+            //Id = CalculateId();
+            Id = IdHelper.CalculateId();
         }
 
         #endregion
