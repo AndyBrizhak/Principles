@@ -10,9 +10,10 @@ namespace RepeatLogic
     {
         static void Main(string[] args)
         {
-            Customer customer = new Customer();
+            //Customer customer = new Customer();
+            Customer customer = new Customer(new DefaultIdGenerator());
             Console.WriteLine($"customer Id {customer.Id}");
-            Console.ReadKey();
+            //Console.ReadKey();
 
             Store store = new Store();
             Console.WriteLine($"Store Id {store.Id}");

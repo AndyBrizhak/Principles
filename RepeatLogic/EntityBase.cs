@@ -1,21 +1,26 @@
 ﻿using System;
 
-public abstract class EntityBase
+namespace RepeatLogic
 {
-    public long Id { get; private set; }
-
-    public EntityBase()
+    public abstract class EntityBase
     {
-        Id = CalculateId();
-    }
+        public long Id { get; private set; }
+
+        public EntityBase()
+        {
+            Id = CalculateId();
+        }
 
 
 
     
 
-    private long CalculateId()
-    {
-        long id = DateTime.Now.Ticks;
-        return id;
+        private long CalculateId()
+        {
+            //var id = DateTime.Now.Ticks;
+            Random random = new Random();
+            var id = random.Next();
+            return id;
+        }
     }
 }

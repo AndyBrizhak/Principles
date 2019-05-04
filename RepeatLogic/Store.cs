@@ -1,26 +1,27 @@
-﻿using System;
-
-public class Store : EntityBase
+﻿namespace RepeatLogic
 {
-    //public long Id { get; set; }
-
-    #region Store()
-
-    public Store()
+    public class Store : EntityBase
     {
-        //Id = CalculateId();
-        //Id = IdHelper.CalculateId();
+        //public long Id { get; set; }
+
+        #region Store()
+
+        public Store()
+        {
+            //Id = CalculateId();
+            //Id = IdHelper.CalculateId();
+        }
+
+        #endregion
+
+        #region CalculateId()
+
+        //private long CalculateId()
+        //{
+        //    long id = DateTime.Now.Ticks;
+        //    return id;
+        //}
+
+        #endregion
     }
-
-    #endregion
-
-    #region CalculateId()
-
-    //private long CalculateId()
-    //{
-    //    long id = DateTime.Now.Ticks;
-    //    return id;
-    //}
-
-    #endregion
 }

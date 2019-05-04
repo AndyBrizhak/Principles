@@ -5,11 +5,14 @@
 //В данном случае сильные связи протянулись от классов Customer и Store к классу IdHelper
 #endregion
 
-public static class IdHelper
+namespace RepeatLogic
 {
-    public static long CalculateId()
+    public static class IdHelper
     {
-        long id = DateTime.Now.Ticks;
-        return id;
+        public static long CalculateId()
+        {
+            long id = DateTime.Now.Ticks;
+            return id;
+        }
     }
 }
