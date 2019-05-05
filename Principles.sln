@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicNumbers", "MagicNumber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatLogic", "RepeatLogic\RepeatLogic.csproj", "{D624CE12-3BEA-40F0-B898-C91E23BF5805}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{475E384C-3014-4628-80DA-E1DCEA0780D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D624CE12-3BEA-40F0-B898-C91E23BF5805}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D624CE12-3BEA-40F0-B898-C91E23BF5805}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D624CE12-3BEA-40F0-B898-C91E23BF5805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{475E384C-3014-4628-80DA-E1DCEA0780D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475E384C-3014-4628-80DA-E1DCEA0780D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475E384C-3014-4628-80DA-E1DCEA0780D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475E384C-3014-4628-80DA-E1DCEA0780D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
