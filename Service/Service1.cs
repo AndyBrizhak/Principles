@@ -11,7 +11,7 @@ namespace Service
        public void   SendEmailData(string Email, string Subject, string Text) { }
        public void SendFtpData(string FtpAddres, string Port, Account User) { }
        public void SaveXmlData(List<string> DataList) { }
-
+       public void SaveJsonData(List<string> DataList) { }
    }
 
 }
